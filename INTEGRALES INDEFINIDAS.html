@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculo 3"C" vespertino</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">Calculo 3"C" vespertino</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <h1 class="logo">PAGINA DE CALCULO</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> INTEGRALES </button>
+                        </a>
+                </li>
+                <a href="INTEGRALES DEFINIDAS.html">
+                    <button id="rysen" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>1. INTEGRALES DEFINIDAS</button>
+                </a>
+                <li>
+                    <a href="INTEGRALES INDEFINIDAS.html">
+                        <button id="intel" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>2. INTEGRALES INDEFINIDAS</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="INTREGALES DOBLES.html">
+                        <button id="p-ryzen" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>3. INTREGALES DOBLES</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="INTREGALES TRIPLES.html">
+                        <button id="pantalone" class="boton-menu boton-categoria" ><i class="bi bi-hand-index-thumb"></i>4. INTREGALES TRIPLES</button>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2024 SISTEMAS TERCERO "C"</p>
+        </footer>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">INTEGRALES INDEFINIDAS</h2>
+        <br>
+        <p>Las integrales indefinidas son integrales en las que no se especifican los límites de integración. En lugar de eso, se dejan como variables. Por ejemplo:</p>
+        <br>
+         <p>∫ f(x) dx </p>
+         <br>
+         <p>∫ En lugar de:        </p>
+         <br>
+         <p>∫_a^b f(x) dx        </p>
+         <p> Donde a y b son límites específicos.</p>
+         <br>
+         <p>Al dejar los límites indefinidos, la integral indefinida representa una familia de funciones, no un valor numérico específico. </p>
+         <br>
+         <p>Para evaluar una integral indefinida, se utiliza la antiderivada. La antiderivada F(x) de f(x) se define como:</p>
+         <br>
+         <p>F(x) = ∫ f(x) dx</p>
+         <br>
+        <p>Donde dF/dx = f(x)</p>
+        <br>
+        <p>Algunos ejemplos de integrales indefinidas:</p>
+        <br>
+        <p>∫ x^2 dx = x^3/3 + C</p>
+        <br>
+        <p>∫ sin(x) dx = -cos(x) + C</p>
+        <br>
+        <p>∫ e^x dx = e^x + C</p>
+        <br>
+        <p>Donde C es la constante de integración que se agrega al resultado final. C representa el hecho de que las integrales indefinidas tienen infinitas soluciones.</p>
+        <br>
+        <center>                                          
+            <img src="img/integrales indefinidas.jpg" alt="Imagen 1" style="max-width: 100%; height: auto;">
+        </center>
+        <br>
+        <p>Las integrales indefinidas se usan como un paso intermedio en la evaluación de integrales definidas cuando se aplica el teorema fundamental del cálculo. También son útiles para encontrar antiderivadas.</p>
+        <br>
+        <center>                                          
+            <img src="img/intregrales indefinida1.jpg" alt="Imagen 1" style="max-width: 100%; height: auto;">
+        </center>
+
+        
+            
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+        </div>
+    </main>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/menu.js"></script>
+</body>
+</html>

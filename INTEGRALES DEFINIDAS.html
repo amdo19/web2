@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculo 3"C" vespertino</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">Calculo 3"C" vespertino</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <h1 class="logo">PAGINA DE CALCULO</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">
+                    <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> INTEGRALES </button>
+                    </a>
+                </li>
+                <a href="INTEGRALES DEFINIDAS.html">
+                    <button id="rysen" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>1. INTEGRALES DEFINIDAS</button>
+                </a>
+                <li>
+                    <a href="INTEGRALES INDEFINIDAS.html">
+                        <button id="intel" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>2. INTEGRALES INDEFINIDAS</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="INTREGALES DOBLES.html">
+                        <button id="p-ryzen" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>3. INTREGALES DOBLES</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="INTREGALES TRIPLES.html">
+                        <button id="pantalone" class="boton-menu boton-categoria" ><i class="bi bi-hand-index-thumb"></i>4. INTREGALES TRIPLES</button>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2024 SISTEMAS TERCERO "C"</p>
+        </footer>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">INTEGRALES DEFINIDAS</h2>
+        <p>La integral definida está definida como un límite. Este límite puede calcularse con las fórmulas de integración inmediata. Para calcular el valor de la integral definida evaluamos primero el límite superior y después el límite inferior. La diferencia entre estos valores es el valor de la integral definida.</p>
+        <br>
+        <h1>Definición</h1>
+        <hr>
+            <p>La integral definida es uno de los conceptos fundamentales del Análisis Matemático.
+                <br>
+                <br>
+            <p>La integral definida de f(x) en el intervalo [a,b] es igual al área limitada entre la gráfica de f(x), el eje de abscisas, y las rectas verticales x = a y x = b (bajo la hipótesis de que la función f es positiva). Esta integral se representa por:</p>
+            <br>
+             <center>                                          
+                <img src="img/Integral_f.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+            </center>
+            <br>
+            <nav>
+                <p>a es límite inferior de la integración y b es límite superior de la integración.</p>
+
+                   <p> Si la función F es una función primitiva de f en el intervalo [a,b], por la Regla de Barrow se tiene que:</p>
+                   <br>
+                   <center>                                          
+                    <img src="img/Regla_Barrow 2.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <h1> Propiedades </h1>
+                <hr>
+                <br>
+                <p>1. El valor de la integral definida cambia de signo si se permutan los límites de integración.</p>
+                <br>
+                <center>                                          
+                    <img src="img/propiedades1.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <p>2. Si los límites que integración coinciden, la integral definida vale cero.</p>
+                <center>                                          
+                    <img src="img/propiedades2.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <p>3. Si c es un punto interior del intervalo [a, b], la integral definida se descompone como una suma de dos integrales extendidas a los intervalos [a, c] y [c, b].</p>
+                <center>                                          
+                    <img src="img/propie 3.gif" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <p>4. La integral definida de una suma de funciones es igual a la suma de integrales·</p>
+                <center>                                          
+                    <img src="img/propi4.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <p>5. La integral del producto de una constante por una función es igual a la constante por la integral de la función.</p>
+                <center>                                          
+                    <img src="img/propie 5.gif" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <h1>Ejemplo</h1>
+                <hr>
+                <br>
+                <center>                                          
+                    <img src="img/ejemplo.jpg" alt="Imagen 1" style="max-width: 100%; height: auto;">
+                </center>
+                <br>
+                <p>La imagen de ejemplo tiene un error en el primer término, al integrar x^2 queda x^3/3, luego al remplazar 2 en x, queda 8/3, siendo el resultado 2/3</p>
+            </nav>
+
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+        </div>
+    </main>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/menu.js"></script>
+</body>
+</html>

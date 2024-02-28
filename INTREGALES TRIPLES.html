@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculo 3"C" vespertino</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">Calculo 3"C" vespertino</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <h1 class="logo">PAGINA DE CALCULO</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">
+                    <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> INTEGRALES </button>
+                    </a>
+                </li>
+                <a href="INTEGRALES DEFINIDAS.html">
+                    <button id="rysen" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>1. INTEGRALES DEFINIDAS</button>
+                </a>
+                <li>
+                    <a href="INTEGRALES INDEFINIDAS.html">
+                        <button id="intel" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>2. INTEGRALES INDEFINIDAS</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="INTREGALES DOBLES.html">
+                        <button id="p-ryzen" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>3. INTREGALES DOBLES</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="INTREGALES TRIPLES.html">
+                        <button id="pantalone" class="boton-menu boton-categoria" ><i class="bi bi-hand-index-thumb"></i>4. INTREGALES TRIPLES</button>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2024 SISTEMAS TERCERO "C"</p>
+        </footer>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">INTEGRALES TRIPLES</h2>
+        <p>Las integrales triples son extensiones naturales de las integrales dobles y se utilizan en cálculo y análisis matemático para calcular la acumulación de funciones de tres variables sobre un volumen tridimensional en el espacio. Estas integrales son herramientas fundamentales en matemáticas avanzadas y encuentran aplicaciones en diversas disciplinas, incluyendo física, ingeniería, estadística, y ciencias computacionales.</p>
+
+        <h2>Definición de una Integral Triple:</h2>
+        <p>La integral triple de una función \(f(x, y, z)\) sobre un volumen \(V\) en el espacio se denota como:</p>
+        <p>\[ \int \int \int_V f(x, y, z) \,dx \,dy \,dz \]</p>
+        <p>La integral se evalúa sumando infinitos elementos de volumen \(dx \,dy \,dz\) ponderados por el valor de la función \(f\) en ese punto específico del volumen.</p>
+    
+        <h2>Coordenadas para Integrales Triples:</h2>
+        <p>Se pueden utilizar diferentes sistemas de coordenadas para simplificar la evaluación de integrales triples. Los sistemas más comunes son las coordenadas cartesianas, cilíndricas y esféricas.</p>
+        <ul>
+            <li><strong>Coordenadas Cartesianas:</strong> \((x, y, z)\) son las coordenadas rectangulares estándar.</li>
+            <li><strong>Coordenadas Cilíndricas:</strong> \((r, \theta, z)\), donde \(r\) es el radio, \(\theta\) es el ángulo polar y \(z\) es la altura.</li>
+            <li><strong>Coordenadas Esféricas:</strong> \((\rho, \theta, \phi)\), donde \(\rho\) es la distancia al origen, \(\theta\) es el ángulo polar y \(\phi\) es el ángulo azimutal.</li>
+        </ul>
+    
+        <h2>Aplicaciones de Integrales Triples:</h2>
+        <ul>
+            <li><strong>Volumen y Masa:</strong> Calcular el volumen de sólidos tridimensionales y la masa distribuida en un espacio tridimensional.</li>
+            <li><strong>Centro de Masa y Momento de Inercia:</strong> Determinar el centro de masa y el momento de inercia de objetos tridimensionales con densidad variable.</li>
+            <li><strong>Flujo de Campos Vectoriales:</strong> Analizar el flujo de campos vectoriales a través de volúmenes tridimensionales.</li>
+            <li><strong>Probabilidad y Estadística:</strong> Modelar distribuciones tridimensionales de probabilidad y analizar estadísticas en tres dimensiones.</li>
+            <li><strong>Física e Ingeniería:</strong> Resolver problemas relacionados con fenómenos físicos y de ingeniería que involucren variables tridimensionales.</li>
+        </ul>
+        <center>                                          
+            <img src="https://www.geogebra.org/resource/MDhjQzVv/nVtq38xCifAPuNzr/material-MDhjQzVv.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+        </center>
+        <br>
+        <p>Iteración en el orden de integración
+            Al igual que las integrales dobles, aquí se puede cambiar el orden de integración de acuerdo a cómo se consideren las variables.
+            
+            Al iterar el orden de la integrales triples, existen 6 posibilidades de plantear la integral.</p>
+        <br>
+        <center>                                          
+            <img src="https://www.geogebra.org/resource/u94jK6f6/DB3WOeivZFf3QisD/material-u94jK6f6.png" alt="Imagen 1" style="max-width: 100%; height: auto;">
+        </center>
+            
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS -->
+        </div>
+    </main>
+</div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/menu.js"></script>
+</body>
+</html>
